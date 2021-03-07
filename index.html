@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>HangMan game!</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link 
+         rel="stylesheet" 
+         href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" 
+      ]/>
+      <link rel='stylesheet' href="./style.css"></link>
+      
+   </head>
+   <body>
+
+         <div class="game-wrapper">
+            <div class="hang-container">
+               <div class="roof"></div>
+               <div class="bind"></div>
+               <div class="base"></div>
+
+               <div class="man">
+                  <div class="man--head limb-1"></div>
+                  <div class="man--trunk limb-2"></div>
+                  <div class="man--left-arm limb-3"></div>
+                  <div class="man--right-arm limb-4"></div>
+                  <div class="man--left-leg limb-5"></div>
+                  <div class="man--right-leg limb-6"></div>
+               </div>
+            </div>
+            <div class="gameplay-container">
+               <div class="letters-box"></div>
+               <label for="letter-input">Select a letter:</label>
+                <input type="text"  id='letter-input'  maxlength="1" class="letter-input" oninput="this.value = this.value.toUpperCase()" >
+               <button   class='letter-send'>Apply letter</button>
+               <h1 class='points'>0</h1>
+            </div>
+         </div>
+
+
+      <script src="./index.js" type="text/javascript"> </script>
+   </body>
+</html>
